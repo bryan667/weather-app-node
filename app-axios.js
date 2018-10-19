@@ -36,7 +36,7 @@ axios.get(geocodeURL).then((response) => {
     console.log(`currentTemp: ${temperature}, apparentTemp: ${apparentTemp}, summary: ${summary}` )
 }).catch((e) => {
     if (e.code) {
-        console.log('Unable to connect to Address server. Please try again later')
+        console.log('Unable to connect to address server. Please try again later')
     } else {
         console.log(e.message)
     }
